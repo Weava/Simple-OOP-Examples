@@ -4,7 +4,7 @@
 public class GetAnimalService
 {
   public ListInterface<Animal> findAnimals(AnimalQuery query) {
-    ListInterface<Animal> animals = query.getAnimals(GetAllAnimals());
+    ListInterface<Animal> animals = query.getFilteredAnimals(GetAllAnimals());
     return animals;
   }
 }
